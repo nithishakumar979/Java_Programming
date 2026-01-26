@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num = sc.nextInt();
+        if(num<100 && 10<=num)
+            {
+                int first =num%10;
+                int second = (num/10)%10;
+                int res = (first*10)+second;
+                System.out.println(res);
+            } 
+         else if(num<1000 && num>=100)  
+         {
+             int first = num/100;
+             int second =(num/10)%10;
+             int res=(second*10)+first;
+             System.out.println(res);
+         }
+        else if(num<10000 && num>=1000)  
+         {
+             int first = num/1000;
+             int second =(num/100)%10;
+             int res=(second*10)+first;
+             System.out.println(res);
+         }
+        else if(num<100000 && num>=10000)  
+         {
+             int first = num/10000;
+             int second =(num/1000)%10;
+             int res=(second*10)+first;
+             System.out.println(res);
+         }
+        else if(num<1000000 && num>=100000)  
+        {
+             int first = num/100000;
+             int second =(num/10000)%10;
+             int res=(second*10)+first;
+             System.out.println(res);
+            
+        }
+        else{
+            System.out.println("STDOUT");
+        }
+        
+
+     
+}}
